@@ -1,0 +1,732 @@
+/*#ekashu_3d_logo_mastercard
+{
+	position: absolute;
+	right: 75px;
+	top: 0px;
+}
+
+#ekashu_3d_logo_visa
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#ekashu_amount
+{
+	color: #ED008C;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+#ekashu_card_logo_verification_back
+{
+}
+
+#ekashu_card_logo_verification_front
+{
+}
+
+.ekashu_card_logo_verification_text a
+{
+	color: #ED008C;
+	text-decoration: none;
+}*/
+
+@font-face {
+    font-family: 'Metropolis-bold';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-bold-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-bold-italic';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-bolditalic-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-light';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-light-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-light-italic';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-lightitalic-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-regular-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis-italic';
+    src: url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-regularitalic-webfont.woff2') format('woff2'),
+         url('https://robo-shakti.github.io/content/fonts/metropolis/metropolis-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin: 0px;
+	font-family: 'Metropolis';
+	color: #333333;
+}
+
+#ekashu_card_logos_accepted
+{
+	margin-bottom: 15px;
+}
+
+#ekashu_card_logos_accepted img
+{
+	
+}
+
+#ekashu_card_logos_verification,
+#ekashu_header_collect_data
+{
+	display: none;	
+}
+
+#ekashu_card_logos_verification_images
+{
+	
+}
+
+.ekashu_clear_float
+{
+	
+}
+
+.ekashu_content
+{
+
+}
+
+.ekashu_content_card_verification_value
+{
+	
+}
+
+.ekashu_content_issue_number
+{
+	
+}
+
+.ekashu_description
+{
+	
+}
+
+.ekashu_error
+{
+	color: red;
+	margin-bottom: 10px;	
+}
+
+.ekashu_errors
+{
+    margin-bottom: 25px;
+}
+
+.ekashu_errors_top
+{
+	
+}
+
+.ekashu_errors_bottom
+{
+	
+}
+
+.ekashu_failure_return_url
+{
+	
+}
+
+.ekashu_failure_return_url a
+{
+	
+}
+
+.ekashu_field,
+.ekashu_field_error
+{
+	margin-bottom: 15px;
+}
+
+#ekashu_field_card_address_1
+{
+	
+}
+
+#ekashu_field_card_address_2
+{
+	
+}
+
+#ekashu_field_card_city
+{
+	
+}
+
+#ekashu_field_card_country
+{
+	
+}
+
+#ekashu_section_card_address::before{
+	content: 'Billing Information';
+    font-family: 'Metropolis-bold';
+    font-size: 20px;
+    color: #333333;
+}
+
+#ekashu_field_card_email_address
+{
+	margin-top: 25px;	
+}
+
+#ekashu_field_card_first_name
+{
+	
+}
+
+#ekashu_field_card_last_name
+{
+	
+}
+
+#ekashu_field_card_number
+{
+	
+}
+
+#ekashu_field_card_phone_number
+{
+	
+}
+
+#ekashu_field_card_phone_number_type
+{
+	
+}
+
+#ekashu_field_card_state
+{
+	
+}
+
+#ekashu_field_card_title
+{
+	
+}
+
+#ekashu_field_card_zip_code
+{
+	
+}
+
+#ekashu_field_delivery_address_1
+{
+	
+}
+
+#ekashu_field_delivery_address_2
+{
+	
+}
+
+#ekashu_field_delivery_city
+{
+	
+}
+
+#ekashu_field_delivery_country
+{
+	
+}
+
+#ekashu_field_delivery_email_address
+{
+	
+}
+
+#ekashu_field_delivery_first_name
+{
+	
+}
+
+#ekashu_field_delivery_last_name
+{
+	
+}
+
+#ekashu_field_delivery_phone_number
+{
+	
+}
+
+#ekashu_field_delivery_phone_number_type
+{
+	
+}
+
+#ekashu_field_delivery_state
+{
+	
+}
+
+#ekashu_field_delivery_title
+{
+	
+}
+
+#ekashu_field_delivery_zip_code
+{
+	
+}
+
+.ekashu_field_error .ekashu_label
+{
+	color: red;
+}
+
+.ekashu_field_error .ekashu_input input
+{
+	border-color: red;
+}
+
+#ekashu_field_expires_end
+{
+	
+}
+
+#ekashu_field_invoice_address_1
+{
+	
+}
+
+#ekashu_field_invoice_address_2
+{
+	
+}
+
+#ekashu_field_invoice_city
+{
+	
+}
+
+#ekashu_field_invoice_country
+{
+	
+}
+
+#ekashu_field_invoice_email_address
+{
+	
+}
+
+#ekashu_field_invoice_first_name
+{
+	
+}
+
+#ekashu_field_invoice_last_name
+{
+	
+}
+
+#ekashu_field_invoice_phone_number
+{
+	
+}
+
+#ekashu_field_invoice_phone_number_type
+{
+	
+}
+
+#ekashu_field_invoice_state
+{
+	
+}
+
+#ekashu_field_invoice_title
+{
+	
+}
+
+#ekashu_field_invoice_zip_code
+{
+	
+}
+
+#ekashu_field_issue_number
+{
+	
+}
+
+#ekashu_field_issue_number input
+{
+	
+}
+
+#ekashu_field_recipient_account_number
+{
+	
+}
+
+#ekashu_field_recipient_date_of_birth
+{
+	
+}
+
+#ekashu_field_recipient_last_name
+{
+	
+}
+
+#ekashu_field_recipient_zip_code
+{
+	
+}
+
+#ekashu_field_valid_from
+{
+	display: none;	
+}
+
+#ekashu_field_verification_value
+{
+	
+}
+
+#ekashu_field_verification_value input
+{
+	
+}
+
+.ekashu_footer
+{
+	
+}
+
+.ekashu_header
+{
+	
+}
+
+.ekashu_header_text
+{
+	
+}
+
+.ekashu_input input,
+.ekashu_select select
+{
+    font-family: Metropolis;
+    color: #333333;
+    font-size: 17px;
+    line-height: 20px;
+    font-style: normal;
+    border-radius: 0;
+    height: 34px;
+    width: 100%;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid #333;
+    box-sizing: border-box;	
+}
+
+.ekashu_input input::-webkit-input-placeholder::before ,
+.ekashu_input input:-moz-placeholder::before ,
+.ekashu_input input::-moz-placeholder::before ,
+.ekashu_input input:-ms-input-placeholder::before{
+	content:'Hello';
+}
+
+#ekashu_input_card_first_name input
+{
+	
+}
+
+#ekashu_input_card_phone_number_type
+{
+	
+}
+
+#ekashu_input_card_title
+{
+	
+}
+
+#ekashu_input_delivery_first_name input
+{
+	
+}
+
+#ekashu_input_delivery_phone_number_type
+{
+	
+}
+
+#ekashu_input_delivery_title
+{
+	
+}
+
+#ekashu_select_expires_end{
+	font-size: 0px;
+}
+
+#ekashu_input_expires_end_month
+{
+    width: calc(50% - 5px);
+    margin-right: 10px;
+}
+
+#ekashu_input_expires_end_year
+{
+    width: calc(50% - 5px);	
+}
+
+#ekashu_input_invoice_first_name input
+{
+	
+}
+
+#ekashu_input_invoice_phone_number_type
+{
+	
+}
+
+#ekashu_input_invoice_title
+{
+	
+}
+
+#ekashu_input_recipient_date_of_birth_day
+{
+	
+}
+
+#ekashu_input_recipient_date_of_birth_month
+{
+	
+}
+
+#ekashu_input_recipient_date_of_birth_year
+{
+	
+}
+
+#ekashu_input_valid_from_month
+{
+	
+}
+
+#ekashu_input_valid_from_year
+{
+	
+}
+
+.ekashu_issue_number_text a
+{
+	
+}
+
+#ekashu_label_delivery_address_is_card_address
+{
+	
+}
+
+#ekashu_label_invoice_address_is_card_address
+{
+	
+}
+
+#ekashu_label_recipient_account_number_is_card_number
+{
+	
+}
+
+.ekashu_label
+{
+	font-family: 'Metropolis-bold';
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.ekashu_mandatory
+{
+	
+}
+
+.ekashu_monospace
+{
+	
+}
+
+.ekashu_notification_text
+{
+	
+}
+
+.ekashu_notification_title
+{
+	
+}
+
+#ekashu_option_delivery_address_is_card_address_option_no
+{
+	
+}
+
+#ekashu_option_delivery_address_is_card_address_option_yes
+{
+	
+}
+
+#ekashu_option_delivery_address_is_card_address_options
+{
+	
+}
+
+#ekashu_option_invoice_address_is_card_address_option_no
+{
+	
+}
+
+#ekashu_option_invoice_address_is_card_address_option_yes
+{
+	
+}
+
+#ekashu_option_invoice_address_is_card_address_options
+{
+	
+}
+
+
+#ekashu_option_recipient_account_number_is_card_number_option_no
+{
+	
+}
+
+#ekashu_option_recipient_account_number_is_card_number_option_yes
+{
+	
+}
+
+#ekashu_option_recipient_account_number_is_card_number_options
+{
+	
+}
+
+#ekashu_paypal_logos_accepted
+{
+	
+}
+
+.ekashu_return_url
+{
+	
+}
+
+.ekashu_return_url a
+{
+	
+}
+
+.ekashu_section
+{
+	margin-bottom: 30px;	
+}
+
+.ekashu_section_bottom
+{
+	
+}
+
+.ekashu_section_text
+{
+	
+}
+
+.ekashu_section_title
+{
+	display: none;	
+}
+
+.ekashu_section_top
+{
+	
+}
+
+.ekashu_select select
+{
+	
+}
+
+#ekashu_seller_address
+{
+	
+}
+
+#ekashu_seller_name
+{
+	
+}
+
+.ekashu_submit input
+{
+    font-family: 'Metropolis-bold';
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 20px;
+    background-color: #5aaadc;
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    cursor: pointer;
+}
+
+#ekashu_submit_continue
+{
+	
+}
+
+#ekashu_submit_cardeasexml
+{
+	
+}
+
+#ekashu_submit_paypal
+{
+	
+}
+
+#ekashu_title
+{
+	
+}
